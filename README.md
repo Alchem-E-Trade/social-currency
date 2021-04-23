@@ -112,11 +112,14 @@ web3.eth.create() -- account creation(address, privateKey)
 Users will have all normal abilities available to them through the Slack API.
 Non Functional Reqs:
 
-Accessibility -- everyone in Alchemy Slack workspace can interact with bot;
-Security -- any sensitive user information is safeguarded in storage and transmission;
-Privacy -- user interactions with bot are private (except for when bot interacts with everyone in conversation);
-Response Time -- bot responses occur in timely manner for usability;
-
+Accessibility -- everyone in Alchemy Slack workspace can interact with bot;  
+- We will ensure that the bot has the correct workspace/channel permissions, so that it is available alongside preexisting Slack features.  
+Security -- any sensitive user information is safeguarded in storage and transmission;  
+- We will be using Slack to handle user login authorization; additionally we will tailor our Ethereum smart contract to reinforce security, as applicable.  
+Privacy -- user interactions with bot are private (except for when bot interacts with everyone in conversation);  
+- Messages form the bot will be set to Ephemeral in cases where they are meant to only be seen by the user.  
+Response Time -- bot responses occur in timely manner for usability;  
+- Slack's API includes a response category for non-immediate items, which can be employed in the event of Ethereum requests.  
 
 Data Flow:
 
