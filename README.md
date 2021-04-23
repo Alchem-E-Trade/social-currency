@@ -3,8 +3,7 @@ A crypto currency that promotes social interaction and is utilized over slack
 
 User Stories
 
-1.
-As a user, I want the ability to set up a new account.
+1. As a user, I want the ability to set up a new account.
 Feature Tasks:
 
 User can message a bot to set up an account
@@ -17,8 +16,7 @@ Ensure that the bot creates a new account with a unique id tied to the user(slac
 Ensure correct seed funds are placed in new account
 Provide error message and abort transaction if system becomes unavailable
 
-2.
-As a user, I want the ability to check my personal account balance by asking the bot.
+2. As a user, I want the ability to check my personal account balance by asking the bot.
 Feature Tasks:
 
 User may ask the bot for their account balance and receive it in a DM.
@@ -28,8 +26,7 @@ Ensure the bot can read messages and respond with a dm.
 Ensure that the bot returns the correct account balance to the user.
 Provide error message and abort transaction if system becomes unavailable
 
-3.
-As a user, I want the ability to send tokens from my account to another user
+3. As a user, I want the ability to send tokens from my account to another user
 Feature Tasks:
 
 User can message a bot to see possible account actions
@@ -43,8 +40,7 @@ Ensure that the bot takes the correct action from the users selection of the mod
 Ensure correct funds are transferred from/to correct accounts
 Provide error message and abort transaction if system becomes unavailable
 
-4.
-As a user, I want the ability to use my tokens to purchase emojis
+4. As a user, I want the ability to use my tokens to purchase emojis
 Feature Tasks:
 
 User can message a bot to see possible account actions
@@ -60,8 +56,7 @@ Ensure correct funds are burned from correct account
 Ensure user who burned funds has emoji/nft access.
 Provide error message and abort transaction if system becomes unavailable
 
-5.
-As a User I want to be able to transfer my tokens to my personal Wallet.
+5. As a User I want to be able to transfer my tokens to my personal Wallet.
 Feature Tasks:
 
 User can message a bot to see possible account actions
