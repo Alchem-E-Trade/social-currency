@@ -109,9 +109,9 @@ User can join the workspace
 Users can message bot to create an account for them and mint seed tokens.
 /command to access bot
 web3.eth.create() -- account creation(address, privateKey)
-Users will have all normal abilities available to them through the Slack API.
-Non Functional Reqs:
+Users will have all normal abilities available to them through the Slack API.  
 
+Non Functional Reqs:  
 Accessibility -- everyone in Alchemy Slack workspace can interact with bot;  
   We will ensure that the bot has the correct workspace/channel permissions, so that it is available alongside preexisting Slack features.  
 Security -- any sensitive user information is safeguarded in storage and transmission;  
