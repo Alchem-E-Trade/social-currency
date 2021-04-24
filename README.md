@@ -72,7 +72,8 @@ Ensure that the bot takes the correct action from the users selection of the lis
 Ensure correct funds are transferred from correct account to users wallet
 Provide error message and abort transaction if system becomes unavailable
 
-![Software Flowchart](/assets/overall-app-flowchart.png)
+![Software Flowchart](/assets/overall-app-flowchart.png)  
+[wireframe source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=ffgwUz0NcubW#)
 
 Software Requirements:
 
@@ -86,7 +87,8 @@ Why care:
 
 Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.
 
-![UI Wireframe](/assets/wireframe-cropped.png)
+![UI Wireframe](/assets/wireframe-cropped.png)  
+[wireframe source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=ffgwUz0NcubW#)
 
 Scope:
 
