@@ -1,16 +1,16 @@
-Software Requirements:
+# Software Requirements:
 
-Vision:
-We wish to create a fun Slack app that incentivizes in-channel networking and bond-building among the Alchemy community, and to explore the possibilities of Ethereum based tokens as the foundation for said incentives.
-Pain:
+### Vision:
+We wish to create a fun Slack app that incentivizes in-channel networking and bond-building among the Alchemy community, and to explore the possibilities of Ethereum based tokens as the foundation for said incentives.  
 
-Social activity, especially when remote, can feel amorphous and difficult to take concrete things away from;
-Blockchain-based currencies are difficult to access for the average user, typically requiring specialized software;
-Why care:
+### Pain Points Addressed:
+- Social activity, especially when remote, can feel amorphous and difficult to take concrete things away from;
+- Blockchain-based currencies are difficult to access for the average user, typically requiring specialized software;
 
+### The "Why":
 Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.
 
-Scope:
+## Scope:
 
 IN:
 User can message the bot to set up an account and receive seed funds.
@@ -39,7 +39,7 @@ Users can message bot to create an account for them and mint seed tokens.
 web3.eth.create() -- account creation(address, privateKey)
 Users will have all normal abilities available to them through the Slack API.
 
-Non Functional Reqs:  
+### Non Functional Reqs:  
 Accessibility -- everyone in Alchemy Slack workspace can interact with bot;  
  We will ensure that the bot has the correct workspace/channel permissions, so that it is available alongside preexisting Slack features.  
 Security -- any sensitive user information is safeguarded in storage and transmission;  
@@ -49,7 +49,7 @@ Privacy -- user interactions with bot are private (except for when bot interacts
 Response Time -- bot responses occur in timely manner for usability;  
  Slack's API includes a response category for non-immediate items, which can be employed in the event of Ethereum requests.  
 
-Data Flow:  
+## Data Flow:  
 
 A new User enters a channel and sends a message to the bot.  
 
