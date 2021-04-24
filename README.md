@@ -2,7 +2,7 @@
 
 A crypto currency that promotes social interaction and is utilized over slack
 
-User Stories
+## User Stories
 
 1. As a user, I want the ability to set up a new account.
    Feature Tasks:
