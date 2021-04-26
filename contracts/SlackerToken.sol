@@ -1,13 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
+import './SafeMath.sol';
 
 contract SlackerToken {
+    using SafeMath for uint256;
 
     string public name = 'Slacker Token';
     string public symbol = 'ST';
     string public standard = 'ST token v1.0.0';
-    uint public _totalSupply;
+    uint256 public decimal = 0;
+    uint256 public totalSupply;
 
     event Transfer(
         address indexed _from,
@@ -27,8 +30,8 @@ contract SlackerToken {
     mapping(address => mapping(address => uint256)) public allowance;
 
 
-    constructor(SlackerToken _tokenContract, uint256 _tokenPrice) public{
-        balanceOf[msg.sender] = initialSupply;
+    constructor(uint256 _initialSupply) public{
+        balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
     }
     
