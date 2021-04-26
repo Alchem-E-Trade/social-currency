@@ -2,12 +2,13 @@
   "name": "social-currency",
   "version": "1.0.0",
   "description": "'And app to translate between a Slack workspace and an Ethereum smart contract'",
-  "main": "truffle-config.js",
+  
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/app.js"
   },
   "repository": {
     "type": "git",
