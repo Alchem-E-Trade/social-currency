@@ -2,7 +2,6 @@
   "name": "social-currency",
   "version": "1.0.0",
   "description": "'And app to translate between a Slack workspace and an Ethereum smart contract'",
-  
   "directories": {
     "test": "test"
   },
