@@ -5,6 +5,9 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": "15.x"
+  },
   "scripts": {
     "test": "exit 0",
     "start": "node lib/app.js"
