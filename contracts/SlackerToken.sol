@@ -38,7 +38,9 @@ contract SlackerToken {
 
 
     }
-    
+    function getName() public pure returns(string memory) {
+        return 'Slacker Token';
+    }
 
     function transfer(address _to, uint256 _value) public returns(bool success) {
 
@@ -79,7 +81,9 @@ contract SlackerToken {
         return true;
     }
 
+    // function generateAccount(string memory slackId) public returns(bool success) { 
+    //     toHash = 
     
-    }
-
+    // }
+}
 

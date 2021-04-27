@@ -1,7 +1,7 @@
-require("dotenv").config();
-const { generateMnemonic } = require("bip39");
+require('dotenv').config();
+// const { generateMnemonic } = require('bip39');
 // const HDWalletProvider = require("@truffle/hdwallet-provider");
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require('truffle-hdwallet-provider');
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -39,7 +39,7 @@ module.exports = {
    * $ truffle test --network <network-name>
    */
 
-  networks: {
+    networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
@@ -62,31 +62,31 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider(process.env.MNEMONIC, process.env.ROPSTEN_URL),
-      network_id: 3, // Ropsten's id
-      gas: 4000000, // Ropsten has a lower block limit than mainnet
-      confirmations: 2, // # of confs to wait between deployments. (default: 0)
+        ropsten: {
+            provider: () =>
+                new HDWalletProvider(process.env.MNEMONIC, process.env.ROPSTEN_URL),
+            network_id: 3, // Ropsten's id
+            gas: 4000000, // Ropsten has a lower block limit than mainnet
+            confirmations: 2, // # of confs to wait between deployments. (default: 0)
       //timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
-    },
+            skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
+        },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
-  },
+    },
 
   // Set default mocha options here, use special reporters etc.
-  mocha: {
+    mocha: {
     // timeout: 100000
-  },
+    },
 
   // Configure your compilers
-  compilers: {
-    solc: {
+    compilers: {
+        solc: {
       // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
@@ -96,8 +96,8 @@ module.exports = {
       //  },
       //  evmVersion: "byzantium"
       // }
+        },
     },
-  },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled: false to enabled: true
   //
@@ -105,7 +105,7 @@ module.exports = {
   // those previously migrated contracts available in the .db directory, you will need to run the following:
   // $ truffle migrate --reset --compile-all
 
-  db: {
-    enabled: false,
-  },
+    db: {
+        enabled: false,
+    },
 };
