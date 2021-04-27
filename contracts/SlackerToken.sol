@@ -34,7 +34,9 @@ contract SlackerToken {
         balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
     }
-    
+    function getName() public pure returns(string memory) {
+        return 'Slacker Token';
+    }
 
     function approve(address _spender, uint256 _value) public returns(bool success) {
 
@@ -63,7 +65,9 @@ contract SlackerToken {
         return true;
     }
 
+    // function generateAccount(string memory slackId) public returns(bool success) { 
+    //     toHash = 
     
-    }
-
+    // }
+}
 
