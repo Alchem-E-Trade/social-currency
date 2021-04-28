@@ -1,76 +1,75 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
+pragma experimental ABIEncoderV2;
 
 import './SafeMath.sol';
 
 contract SlackerToken {
     using SafeMath for uint256;
 
-    string public name = 'Slacker Token';
-    string public symbol = 'ST';
-    string public standard = 'ST token v1.0.0';
+    string[] slackers;
+    mapping(string => uint) balances;
+
     uint256 public decimal = 0;
     uint256 public totalSupply;
 
     event Transfer(
-        address indexed _from,
-        address indexed _to,
+        string indexed _from,
+        string indexed _to,
         uint256 _value
     );
 
-    event Approval(
-        address indexed _owner,
-        address indexed _spender,
-        uint256 _value
-    );
+    // event Approval(
+    //     address indexed _owner,
+    //     address indexed _spender,
+    //     uint256 _value
+    // );
 
-
-    mapping(address => uint256) public balanceOf;
-
-    mapping(address => mapping(address => uint256)) public allowance;
-    mapping(address => user) users;
-    struct user {
-		string slackId;
-    }
-
-    function addUser(string memory slackId) public pure returns(string memory) {
-        return slackId;
-    }
-    // function getUsers() view public returns (address[] memory) {
-    //     return users;
+  
+    // function addUser(string memory slackId) public pure returns(string memory) {
+    //     return slackId;
     // }
-
+ 
     constructor(uint256 _initialSupply) public{
-        balanceOf[msg.sender] = _initialSupply;
+        // balances[slackers[0]] = _initialSupply;
         totalSupply = _initialSupply;
     }
+
     function getName() public pure returns(string memory) {
         return 'Slacker Token';
     }
+     function getSymbol() public pure returns(string memory) {
+        return 'ST';
+    }
 
-    function approve(address _spender, uint256 _value) public returns(bool success) {
-
-        allowance[msg.sender][_spender] = _value;
-
-        emit Approval(msg.sender, _spender, _value);
-
-        return true;
+    function getTotalSupply() public view returns(uint256){
+        return  totalSupply;
     }
 
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+    // function approve(address _spender, uint256 _value) public returns(bool success) {
 
-        require(_value <= balanceOf[_from]);
+    //     allowance[msg.sender][_spender] = _value;
 
-        require(_value <= allowance[_from][msg.sender]);
+    //     emit Approval(msg.sender, _spender, _value);
 
-        balanceOf[_from] = balanceOf[_from].sub(_value);
+    //     return true;
+    // }
 
-        balanceOf[_to] = balanceOf[_to].add(_value);
 
-        allowance[_from][msg.sender] = allowance[_from][msg.sender].sub(_value); 
+    function transferFrom(string memory _from, string memory _to, uint256 _value) public returns (bool success) {
 
-        emit Transfer(_from, _to, _value);
+        require(_value <= balances[_from]);
+
+        // require(_value <= allowance[_from][msg.sender]);
+
+        balances[_from] = balances[_from].sub(_value);
+
+        balances[_to] = balances[_to].add(_value);
+
+        // allowance[_from][msg.sender] = allowance[_from][msg.sender].sub(_value); 
+
+        emit Transfer( _from,  _to, _value);
 
         return true;
     }
