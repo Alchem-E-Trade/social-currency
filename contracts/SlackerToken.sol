@@ -28,9 +28,19 @@ contract SlackerToken {
     mapping(address => uint256) public balanceOf;
 
     mapping(address => mapping(address => uint256)) public allowance;
+    mapping(address => user) users;
+    struct user {
+		string slackId;
+    }
 
+    function addUser(string memory slackId) public pure returns(string memory) {
+        return slackId;
+    }
+    // function getUsers() view public returns (address[] memory) {
+    //     return users;
+    // }
 
-    constructor(uint256 _initialSupply) public{
+    constructor(uint256 _initialSupply) public {
         
         totalSupply = _initialSupply;
         
