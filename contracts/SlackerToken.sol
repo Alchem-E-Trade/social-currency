@@ -40,28 +40,12 @@ contract SlackerToken {
     //     return users;
     // }
 
-    constructor(uint256 _initialSupply) public {
-        
-        totalSupply = _initialSupply;
-        
+    constructor(uint256 _initialSupply) public{
         balanceOf[msg.sender] = _initialSupply;
-
-
+        totalSupply = _initialSupply;
     }
     function getName() public pure returns(string memory) {
         return 'Slacker Token';
-    }
-
-    function transfer(address _to, uint256 _value) public returns(bool success) {
-
-    require(balanceOf[msg.sender] >= _value);
-    
-    balanceOf[msg.sender] = balanceOf[msg.sender].sub(_value);
-    balanceOf[_to] = balanceOf[_to].add(_value);
-    
-    emit Transfer(msg.sender, _to, _value);
-    
-    return true;
     }
 
     function approve(address _spender, uint256 _value) public returns(bool success) {
