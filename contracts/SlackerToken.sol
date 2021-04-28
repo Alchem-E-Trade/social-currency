@@ -28,28 +28,24 @@ contract SlackerToken {
     mapping(address => uint256) public balanceOf;
 
     mapping(address => mapping(address => uint256)) public allowance;
+    mapping(address => user) users;
+    struct user {
+		string slackId;
+    }
 
+    function addUser(string memory slackId) public pure returns(string memory) {
+        return slackId;
+    }
+    // function getUsers() view public returns (address[] memory) {
+    //     return users;
+    // }
 
     constructor(uint256 _initialSupply) public{
-        
-        totalSupply = _initialSupply;
-        
         balanceOf[msg.sender] = _initialSupply;
-
-
+        totalSupply = _initialSupply;
     }
-    
-
-    function transfer(address _to, uint256 _value) public returns(bool success) {
-
-    require(balanceOf[msg.sender] >= _value);
-    
-    balanceOf[msg.sender] = balanceOf[msg.sender].sub(_value);
-    balanceOf[_to] = balanceOf[_to].add(_value);
-    
-    emit Transfer(msg.sender, _to, _value);
-    
-    return true;
+    function getName() public pure returns(string memory) {
+        return 'Slacker Token';
     }
 
     function approve(address _spender, uint256 _value) public returns(bool success) {
@@ -79,7 +75,9 @@ contract SlackerToken {
         return true;
     }
 
+    // function generateAccount(string memory slackId) public returns(bool success) { 
+    //     toHash = 
     
-    }
-
+    // }
+}
 
