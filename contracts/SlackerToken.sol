@@ -27,12 +27,13 @@ contract SlackerToken {
     );
 
     constructor(uint256 _initialSupply) public{
-        balanceOf[msg.sender] = _initialSupply;
+        // address a = '0x5fc6086db80797dacc68283263554f92523fe249';
+        balanceOf[address(0x5Fc6086Db80797DacC68283263554f92523FE249)] = _initialSupply;
         totalSupply = _initialSupply;
     }
 
     mapping(address => uint256) public balanceOf;
-    mapping(address => string) public _slackId;
+    mapping(string => address) public _slackId;
     mapping(address => mapping(address => uint256)) public allowance;
     // mapping(string => mapping(address => uint256)) public _slackId;
     // mapping(address => user) users;
