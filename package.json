@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node -r dotenv/config ./lib/app.js"
+    "start": "node -r dotenv/config ./lib/app.js",
+    "dev": "npm run artifacts && next client",
+    "artifacts": "cp -r ./build/contracts/ ./lib/web3/artifacts"
   },
   "repository": {
     "type": "git",
