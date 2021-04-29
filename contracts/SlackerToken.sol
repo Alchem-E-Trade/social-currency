@@ -27,7 +27,6 @@ contract SlackerToken {
     );
 
     constructor(uint256 _initialSupply) public{
-        // address a = '0x5fc6086db80797dacc68283263554f92523fe249';
         balanceOf[address(0x5Fc6086Db80797DacC68283263554f92523FE249)] = _initialSupply;
         totalSupply = _initialSupply;
     }
