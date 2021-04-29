@@ -1,11 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
+pragma experimental ABIEncoderV2;
 
 import './SafeMath.sol';
 
 contract SlackerToken {
     using SafeMath for uint256;
 
+    string[] public slackers;
     string public name = 'Slacker Token';
     string public symbol = 'ST';
     string public standard = 'ST token v1.0.0';
@@ -24,10 +26,15 @@ contract SlackerToken {
         uint256 _value
     );
 
+    constructor(uint256 _initialSupply) public{
+        balanceOf[msg.sender] = _initialSupply;
+        totalSupply = _initialSupply;
+    }
 
     mapping(address => uint256) public balanceOf;
-
+    mapping(address => string) public _slackId;
     mapping(address => mapping(address => uint256)) public allowance;
+<<<<<<< HEAD
     mapping(address => user) users;
     struct user {
 		string slackId;
@@ -45,10 +52,40 @@ contract SlackerToken {
         totalSupply = _initialSupply;
         
         balanceOf[msg.sender] = _initialSupply;
+=======
+    // mapping(string => mapping(address => uint256)) public _slackId;
+    // mapping(address => user) users;
 
+    // struct user {
+	// 	string slackId;
+    // }
+
+    // function addUser(string memory _slackId) public pure returns(string memory) {
+    //     return _slackId;
+    // }
+
+    function userBalance(address userAddress) public view returns(uint){
+        return balanceOf[userAddress];
+    }
+    function addUserFunds(address userAddress, uint _amount) public{
+        balanceOf[userAddress] += _amount;
+    }
+>>>>>>> 138b4a0fd0de9ba1f0f18d3c6316e7b90e55a546
+
+    function getName() public pure returns(string memory) {
+        return 'Slacker Token';
 
     }
-    
+
+    function setSlacker(string memory _slackerId) public returns (bool success) {
+        slackers.push(_slackerId);
+        return true;
+    }
+
+    function getSlackers() public view returns (string[] memory) {
+        string[] memory arr = slackers;
+        return arr;
+    }
 
     function transfer(address _to, uint256 _value) public returns(bool success) {
 
@@ -60,6 +97,7 @@ contract SlackerToken {
     emit Transfer(msg.sender, _to, _value);
     
     return true;
+
     }
 
     function approve(address _spender, uint256 _value) public returns(bool success) {
@@ -88,8 +126,4 @@ contract SlackerToken {
 
         return true;
     }
-
-    
-    }
-
-
+}
