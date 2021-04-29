@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
+pragma experimental ABIEncoderV2;
 
 import './SafeMath.sol';
 
@@ -31,7 +32,7 @@ contract SlackerToken {
     }
 
     mapping(address => uint256) public balanceOf;
-    mapping(string => address) public _slackId;
+    mapping(address => string) public _slackId;
     mapping(address => mapping(address => uint256)) public allowance;
     // mapping(string => mapping(address => uint256)) public _slackId;
     // mapping(address => user) users;
@@ -61,6 +62,10 @@ contract SlackerToken {
         return true;
     }
 
+    function getSlackers() public view returns (string[] memory) {
+        string[] memory arr = slackers;
+        return arr;
+    }
 
     function transfer(address _to, uint256 _value) public returns(bool success) {
 
@@ -101,3 +106,4 @@ contract SlackerToken {
 
         return true;
     }
+}
