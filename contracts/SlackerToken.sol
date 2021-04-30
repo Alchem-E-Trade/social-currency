@@ -27,24 +27,16 @@ contract SlackerToken {
     );
 
     constructor(uint256 _initialSupply) public{
-        balanceOf[address(0x5Fc6086Db80797DacC68283263554f92523FE249)] = _initialSupply;
+        balanceOf[msg.sender] = _initialSupply;
         totalSupply = _initialSupply;
     }
 
     mapping(address => uint256) public balanceOf;
     mapping(address => string) public _slackId;
     mapping(address => mapping(address => uint256)) public allowance;
-    // mapping(string => mapping(address => uint256)) public _slackId;
-    // mapping(address => user) users;
+    
 
-    // struct user {
-	// 	string slackId;
-    // }
-
-    // function addUser(string memory _slackId) public pure returns(string memory) {
-    //     return _slackId;
-    // }
-
+    
     function userBalance(address userAddress) public view returns(uint){
         return balanceOf[userAddress];
     }
@@ -106,8 +98,4 @@ contract SlackerToken {
 
         return true;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 22415508a06cefc07b37254d6e1b9311d8a67bc2
