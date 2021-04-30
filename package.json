@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+    "engines" : { 
+    "node" : ">=15.11.0" 
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node -r dotenv/config ./lib/app.js",
