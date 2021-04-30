@@ -32,7 +32,7 @@ contract SlackerToken {
     }
 
     mapping(address => uint256) public balanceOf;
-    mapping(string => address) public _slackId;
+    mapping(address => string) public _slackId;
     mapping(address => mapping(address => uint256)) public allowance;
     // mapping(string => mapping(address => uint256)) public _slackId;
     // mapping(address => user) users;
@@ -106,4 +106,8 @@ contract SlackerToken {
 
         return true;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 22415508a06cefc07b37254d6e1b9311d8a67bc2
