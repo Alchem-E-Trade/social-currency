@@ -2,15 +2,15 @@
   "name": "social-currency",
   "version": "1.0.0",
   "description": "'And app to translate between a Slack workspace and an Ethereum smart contract'",
+  "main": "truffle-config.js",
   "directories": {
     "test": "test"
   },
-  "engines": {
-    "node": "15.x"
-  },
   "scripts": {
-    "test": "exit 0",
-    "start": "node lib/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config ./lib/app.js",
+    "dev": "npm run artifacts && next client",
+    "artifacts": "cp -r ./build/contracts/ ./lib/web3/artifacts"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
+    "request-promise": "^4.2.6",
     "truffle-hdwallet-provider": "^1.0.1",
-    "web3": "^1.3.5",
-    "web3-eth-contract": "^1.3.5"
+    "web3": "^1.3.5"
   }
 }
