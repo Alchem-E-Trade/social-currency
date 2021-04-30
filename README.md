@@ -77,3 +77,5 @@ Provide error message and abort transaction if system becomes unavailable
 
 ![UI Wireframe](/assets/wireframe-cropped.png)  
 [wireframe source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=ffgwUz0NcubW#)  
+
+API access and info provided by CoinGecko and Nomics API's.
