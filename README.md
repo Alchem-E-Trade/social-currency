@@ -1,81 +1,33 @@
-# social-currency
+# social-currency  
 
-A crypto currency that promotes social interaction and is utilized over slack
+An interactive cryptocurrency portal facilitated via Slack app.  
 
-## User Stories
+API access and info provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko</a> and <a href="https://nomics.com/docs/" target="_blank">Nomics</a> API's.  
 
-1. As a user, I want the ability to set up a new account.
-   Feature Tasks:
+---
 
-User can message a bot to set up an account
-Bot will establish a new account for a new user and mint them seed funds.
-Bot confirms the new account and the funds in it with a message to User.
-Acceptance Tests:
+## About the Team  
 
-Ensure the bot can read messages and respond
-Ensure that the bot creates a new account with a unique id tied to the user(slackID)
-Ensure correct seed funds are placed in new account
-Provide error message and abort transaction if system becomes unavailable
+### Tyler Ferris  
 
-2. As a user, I want the ability to check my personal account balance by asking the bot.
-   Feature Tasks:
+bio  
+<a href="https://github.com/Tylerpfarris" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/tyler-p-farris/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-User may ask the bot for their account balance and receive it in a DM.
-Acceptance Tests:
+### Sam Gerber  
 
-Ensure the bot can read messages and respond with a dm.
-Ensure that the bot returns the correct account balance to the user.
-Provide error message and abort transaction if system becomes unavailable
+I'm a software developer based in Portland, OR. In my free time, I enjoy hiking, reading and experimenting with music apps. Cryptocurrencies interests me in how they fuse emerging tech with economics and social models.    
+<a href="https://github.com/sgerpdx" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-3. As a user, I want the ability to send tokens from my account to another user
-   Feature Tasks:
+### Eion Nelson  
 
-User can message a bot to see possible account actions
-User may select transfer funds from list of options
-User specified amount is sent from the users account to the specified users account
-Bot confirms the transaction with a message
-Acceptance Tests:
+bio  
+<a href="https://github.com/ecnelson1" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-Ensure the bot can read messages and respond with account actions list in a modal
-Ensure that the bot takes the correct action from the users selection of the modal
-Ensure correct funds are transferred from/to correct accounts
-Provide error message and abort transaction if system becomes unavailable
+### Dominique Sakrisson  
 
-4. As a user, I want the ability to use my tokens to purchase emojis
-   Feature Tasks:
-
-User can message a bot to see possible account actions
-User may select an emoji/nft assigned a cost value off the bot modal
-User specified amount is burned from the users account
-Bot confirms the transaction with a message
-User is now able to use emoji/have not
-Acceptance Tests:
-
-Ensure the bot can read messages and respond with account actions list modal
-Ensure that the bot takes the correct action from the users selection of the list.
-Ensure correct funds are burned from correct account
-Ensure user who burned funds has emoji/nft access.
-Provide error message and abort transaction if system becomes unavailable
-
-5. As a User I want to be able to transfer my tokens to my personal Wallet.
-   Feature Tasks:
-
-User can message a bot to see possible account actions
-User may select transfer to wallet
-User specified amount is transferred from the users account to their personal wallet
-Bot confirms the transaction with a message
-User is now able to send tokens from their personal wallet
-Acceptance Tests:
-
-Ensure the bot can read messages and respond with account actions list modal
-Ensure that the bot takes the correct action from the users selection of the list
-Ensure correct funds are transferred from correct account to users wallet
-Provide error message and abort transaction if system becomes unavailable
-
-![Software Flowchart](/assets/overall-app-flowchart.png)  
-[flowchart source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=0_0#)  
-
-![UI Wireframe](/assets/wireframe-cropped.png)  
-[wireframe source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=ffgwUz0NcubW#)  
-
-API access and info provided by CoinGecko and Nomics API's.
+bio  
+<a href="https://github.com/Dominique-Sakrisson" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/dominique-sakrisson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>

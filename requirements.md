@@ -1,6 +1,7 @@
-# Software Requirements:
+# Software Requirements:  
 
-### Vision:
+### Vision:  
+
 We wish to create a fun Slack app that incentivizes in-channel networking and bond-building among the Alchemy community, and to explore the possibilities of Ethereum based tokens as the foundation for said incentives.  
 
 ### Pain Points Addressed:
@@ -8,7 +9,8 @@ We wish to create a fun Slack app that incentivizes in-channel networking and bo
 - Blockchain-based currencies are difficult to access for the average user, typically requiring specialized software;
 
 ### The "Why":
-Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.
+
+Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.  
 
 ## Scope:
 
@@ -39,7 +41,8 @@ Users can message bot to create an account for them and mint seed tokens.
 web3.eth.create() -- account creation(address, privateKey)
 Users will have all normal abilities available to them through the Slack API.
 
-### Non Functional Reqs:  
+### Non Functional Reqs:
+
 Accessibility -- everyone in Alchemy Slack workspace can interact with bot;  
  We will ensure that the bot has the correct workspace/channel permissions, so that it is available alongside preexisting Slack features.  
 Security -- any sensitive user information is safeguarded in storage and transmission;  
@@ -47,7 +50,7 @@ Security -- any sensitive user information is safeguarded in storage and transmi
 Privacy -- user interactions with bot are private (except for when bot interacts with everyone in conversation);  
  Messages form the bot will be set to Ephemeral in cases where they are meant to only be seen by the user.  
 Response Time -- bot responses occur in timely manner for usability;  
- Slack's API includes a response category for non-immediate items, which can be employed in the event of Ethereum requests.  
+ Slack's API includes a response category for non-immediate items, which can be employed in the event of Ethereum requests.
 
 ## Data Flow:  
 
@@ -64,3 +67,83 @@ The user interacts with posts in the channel and is rewarded tokens for their in
 The user can message the bot and receive a modal in order to select a transaction (send tokens to other users, purchase emoji nft’s, get account balance)  
 
 The bot will communicate the users selection to the blockchain to get the desired transaction to run and return a confirmation message.  
+
+---
+
+![Software Flowchart](/assets/overall-app-flowchart.png)  
+[flowchart source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=0_0#)
+
+![UI Wireframe](/assets/wireframe-cropped.png)  
+[wireframe source:](https://lucid.app/lucidchart/333b6340-6f11-402e-a837-a9f03152e93e/edit?beaconFlowId=3878AF7CDA637A6F&invitationId=inv_99af0389-d745-4b35-b7ab-f161ef2865cc&page=ffgwUz0NcubW#)
+
+---
+
+# User Stories  
+
+1. As a user, I want the ability to set up a new account.
+   Feature Tasks:
+
+User can message a bot to set up an account
+Bot will establish a new account for a new user and mint them seed funds.
+Bot confirms the new account and the funds in it with a message to User.
+Acceptance Tests:
+
+Ensure the bot can read messages and respond
+Ensure that the bot creates a new account with a unique id tied to the user(slackID)
+Ensure correct seed funds are placed in new account
+Provide error message and abort transaction if system becomes unavailable
+
+2. As a user, I want the ability to check my personal account balance by asking the bot.
+   Feature Tasks:
+
+User may ask the bot for their account balance and receive it in a DM.
+Acceptance Tests:
+
+Ensure the bot can read messages and respond with a dm.
+Ensure that the bot returns the correct account balance to the user.
+Provide error message and abort transaction if system becomes unavailable
+
+3. As a user, I want the ability to send tokens from my account to another user
+   Feature Tasks:
+
+User can message a bot to see possible account actions
+User may select transfer funds from list of options
+User specified amount is sent from the users account to the specified users account
+Bot confirms the transaction with a message
+Acceptance Tests:
+
+Ensure the bot can read messages and respond with account actions list in a modal
+Ensure that the bot takes the correct action from the users selection of the modal
+Ensure correct funds are transferred from/to correct accounts
+Provide error message and abort transaction if system becomes unavailable
+
+4. As a user, I want the ability to use my tokens to purchase emojis
+   Feature Tasks:
+
+User can message a bot to see possible account actions
+User may select an emoji/nft assigned a cost value off the bot modal
+User specified amount is burned from the users account
+Bot confirms the transaction with a message
+User is now able to use emoji/have not
+Acceptance Tests:
+
+Ensure the bot can read messages and respond with account actions list modal
+Ensure that the bot takes the correct action from the users selection of the list.
+Ensure correct funds are burned from correct account
+Ensure user who burned funds has emoji/nft access.
+Provide error message and abort transaction if system becomes unavailable
+
+5. As a User I want to be able to transfer my tokens to my personal Wallet.
+   Feature Tasks:
+
+User can message a bot to see possible account actions
+User may select transfer to wallet
+User specified amount is transferred from the users account to their personal wallet
+Bot confirms the transaction with a message
+User is now able to send tokens from their personal wallet
+Acceptance Tests:
+
+Ensure the bot can read messages and respond with account actions list modal
+Ensure that the bot takes the correct action from the users selection of the list
+Ensure correct funds are transferred from correct account to users wallet
+Provide error message and abort transaction if system becomes unavailable
