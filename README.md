@@ -11,23 +11,23 @@ API access and info provided by <a href="https://www.coingecko.com/en/api" targe
 ### Tyler Ferris
 
 bio  
-<a href="https://github.com/Tylerpfarris" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="50"/></a>
-<a href="https://www.linkedin.com/in/tyler-p-farris/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="50"/></a>
+<a href="https://github.com/Tylerpfarris" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/tyler-p-farris/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
 ### Sam Gerber
 
 I'm a software developer based in Portland, OR. In my free time, I enjoy hiking, reading and experimenting with music apps. Cryptocurrencies interests me in how they fuse emerging tech with economics and social models.  
-<a href="https://github.com/sgerpdx" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="50"/></a>
-<a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="50"/></a>
+<a href="https://github.com/sgerpdx" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
 ### Eion Nelson
 
 bio  
-<a href="https://github.com/ecnelson1" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="50"/></a>
-<a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="50"/></a>
+<a href="https://github.com/ecnelson1" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
 ### Dominique Sakrisson
 
 bio  
-<a href="https://github.com/Dominique-Sakrisson" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="50"/></a>
-<a href="https://www.linkedin.com/in/dominique-sakrisson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="50"/></a>
+<a href="https://github.com/Dominique-Sakrisson" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
+<a href="https://www.linkedin.com/in/dominique-sakrisson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
