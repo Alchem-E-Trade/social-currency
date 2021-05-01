@@ -1,32 +1,32 @@
-# social-currency
+# social-currency  
 
-A interactive cryptocurrency portal facilitated via Slack app.
+An interactive cryptocurrency portal facilitated via Slack app.  
 
-API access and info provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko</a> and <a href="https://nomics.com/docs/" target="_blank">Nomics</a> API's.
+API access and info provided by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko</a> and <a href="https://nomics.com/docs/" target="_blank">Nomics</a> API's.  
 
 ---
 
-## About the Team
+## About the Team  
 
-### Tyler Ferris
+### Tyler Ferris  
 
 bio  
 <a href="https://github.com/Tylerpfarris" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
 <a href="https://www.linkedin.com/in/tyler-p-farris/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-### Sam Gerber
+### Sam Gerber  
 
-I'm a software developer based in Portland, OR. In my free time, I enjoy hiking, reading and experimenting with music apps. Cryptocurrencies interests me in how they fuse emerging tech with economics and social models.  
+I'm a software developer based in Portland, OR. In my free time, I enjoy hiking, reading and experimenting with music apps. Cryptocurrencies interests me in how they fuse emerging tech with economics and social models.    
 <a href="https://github.com/sgerpdx" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
 <a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-### Eion Nelson
+### Eion Nelson  
 
 bio  
 <a href="https://github.com/ecnelson1" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
 <a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
-### Dominique Sakrisson
+### Dominique Sakrisson  
 
 bio  
 <a href="https://github.com/Dominique-Sakrisson" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>

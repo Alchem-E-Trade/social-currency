@@ -1,17 +1,16 @@
-# Software Requirements:
+# Software Requirements:  
 
-### Vision:
+### Vision:  
 
-We wish to create a fun Slack app that incentivizes in-channel networking and bond-building among the Alchemy community, and to explore the possibilities of Ethereum based tokens as the foundation for said incentives.
+We wish to create a fun Slack app that incentivizes in-channel networking and bond-building among the Alchemy community, and to explore the possibilities of Ethereum based tokens as the foundation for said incentives.  
 
 ### Pain Points Addressed:
-
 - Social activity, especially when remote, can feel amorphous and difficult to take concrete things away from;
 - Blockchain-based currencies are difficult to access for the average user, typically requiring specialized software;
 
 ### The "Why":
 
-Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.
+Our product encourages both more social interaction among employees or stakeholders, and makes blockchains and cryptocurrencies more accessible. It gives the user a more customizable experience of the slack platform.  
 
 ## Scope:
 
@@ -53,21 +52,21 @@ Privacy -- user interactions with bot are private (except for when bot interacts
 Response Time -- bot responses occur in timely manner for usability;  
  Slack's API includes a response category for non-immediate items, which can be employed in the event of Ethereum requests.
 
-## Data Flow:
+## Data Flow:  
 
-A new User enters a channel and sends a message to the bot.
+A new User enters a channel and sends a message to the bot.  
 
-The bot sets up the users account in a wallet associating it to their slack ID.
+The bot sets up the users account in a wallet associating it to their slack ID.  
 
-The user then receives a message from the bot confirming the new account has been set up and the user has seed funds in their account.
+The user then receives a message from the bot confirming the new account has been set up and the user has seed funds in their account.  
 
-The user also receives a message of instructions on how the tokens can be sent, earned, or spent
+The user also receives a message of instructions on how the tokens can be sent, earned, or spent  
 
-The user interacts with posts in the channel and is rewarded tokens for their interactions
+The user interacts with posts in the channel and is rewarded tokens for their interactions  
 
-The user can message the bot and receive a modal in order to select a transaction (send tokens to other users, purchase emoji nft’s, get account balance)
+The user can message the bot and receive a modal in order to select a transaction (send tokens to other users, purchase emoji nft’s, get account balance)  
 
-The bot will communicate the users selection to the blockchain to get the desired transaction to run and return a confirmation message.
+The bot will communicate the users selection to the blockchain to get the desired transaction to run and return a confirmation message.  
 
 ---
 
@@ -79,7 +78,7 @@ The bot will communicate the users selection to the blockchain to get the desire
 
 ---
 
-# User Stories
+# User Stories  
 
 1. As a user, I want the ability to set up a new account.
    Feature Tasks:
