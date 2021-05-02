@@ -21,7 +21,7 @@ I'm a software developer based in Portland, OR. In my free time, I enjoy hiking,
 <a href="https://www.linkedin.com/in/sam-h-gerber/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
 ### Eion Nelson  
-
+am a full stack Javascript developer out of Portland, Oregon. I enjoy playing pool, camping, and anything to do with live music! I am interested in cryptocurrency because I have a background in business and I like being on the forefront of business and technology and that is where cryptocurrency lives! 
 bio  
 <a href="https://github.com/ecnelson1" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
 <a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
