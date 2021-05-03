@@ -27,7 +27,6 @@ bio
 <a href="https://www.linkedin.com/in/eionnelson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
 
 ### Dominique Sakrisson  
-
-bio  
+I am a full stack software developer currently in Portland OR. This project was awesome for the reason of the opportunity to take a personal dive into blockchain technology. I look forward to the day we have a more integrated Iot cities where I beleive blockchain can play a valuable role. 
 <a href="https://github.com/Dominique-Sakrisson" target="_blank"><img src="/assets/GitHub-Mark-Light-120px-plus.png" alt="drawing" height="30"/></a>
 <a href="https://www.linkedin.com/in/dominique-sakrisson/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="drawing" height="30"/></a>
